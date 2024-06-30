@@ -1,0 +1,16 @@
+@import "././components/assets/style/Header.scss";
+@import "././components/assets/style/Footer.scss";
+@import "././components/assets/style/Media/MediaFooter.scss";
+@import "././components/assets/style/Media/MediaHeader.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
