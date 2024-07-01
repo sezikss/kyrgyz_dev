@@ -7,7 +7,7 @@ import { IoLogoYoutube } from "react-icons/io";
 
 
 
-const Footer = () => {
+const Footer : React.FC = () => {
     return (
         <div id='footer'>
             <div className='container'>

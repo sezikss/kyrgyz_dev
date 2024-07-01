@@ -1,0 +1,179 @@
+@media (max-width: 1300px) {
+  #header {
+    .header {
+     
+      &--nav {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #header {
+    .header {
+      img {
+        width: 13%;
+      }
+      &--nav {
+        a {
+          font-size: 15px;
+        }
+      }
+      &--login {
+        width: 117px;
+        height: 40px;
+        font-size: 17px;
+        &__btn {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+  #header {
+    .header {
+      img {
+        width: 12%;
+      }
+      &--modal{
+       &__content{
+        &--img{
+          img{
+            width: 50%;
+          }
+          
+        }
+       }
+      }
+      &--nav {
+        a {
+          font-size: 13px;
+        }
+      }
+      &--login {
+        width: 96px;
+        height: 38px;
+        font-size: 13px;
+        &__btn {
+          width: 35px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 990px) {
+  #header {
+    .header {
+h1{
+  margin-left: auto;
+  display: flex;
+}
+
+     
+      img {
+        width: 15%;
+      }
+      &--nav {
+        display: none;
+        a {
+          font-size: 13px;
+        }
+      }
+      &--login {
+        width: 96px;
+        height: 38px;
+        font-size: 13px;
+        &__btn {
+          width: 35px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 690px) {
+  #header {
+    .header {
+h1{
+  margin-left: auto;
+  display: flex;
+}
+
+    
+      img {
+        width: 18%;
+      }
+      &--nav {
+        display: none;
+        a {
+          font-size: 13px;
+        }
+      }
+      &--login {
+        width: 96px;
+        height: 38px;
+        font-size: 13px;
+        &__btn {
+          width: 35px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  #header {
+    .header {
+h1{
+  margin-left: auto;
+  display: flex;
+  font-size: 25px;
+}
+
+    
+      img {
+        width: 20%;
+      }
+      &--nav {
+        display: none;
+        a {
+          font-size: 13px;
+        }
+      }
+      &--login {
+        width: 86px;
+        height: 28px;
+        font-size: 10px;
+        &__btn {
+          width: 34px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
