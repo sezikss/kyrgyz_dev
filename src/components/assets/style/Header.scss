@@ -1,0 +1,113 @@
+#header {
+  padding: 20px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+      
+      display: none;
+    }
+
+    &--modal {
+      display: none;
+      position: relative;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      &__content {
+        img {
+          width: 40%;
+        }
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: #fff;
+        padding: 20px;
+        width: 270px;
+        height: 370px;
+    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+        a {
+          display: flex;
+          line-height: 2;
+          text-decoration: none;
+          font-size: 20px;
+          color: gray;
+          font-weight: 600;
+        }
+        &--img {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    &--nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      a {
+        text-decoration: none;
+        color: #a7b0c2;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        transition: all 0.2s;
+      }
+    }
+    &--login {
+        width:200px ;
+        height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      color: #191f5d;
+      background: #f0f0f0;
+      width: auto;
+      min-width: auto;
+      font-size: 20px;
+      letter-spacing: 0.03em;
+      font-weight: 700;
+      transition: all 0.2s;
+      margin-left: 30px;
+      border-radius: 3px;
+      overflow: hidden;
+      padding: 0 15px 0 0;
+      font-family: proxima-nova, sans-serif;
+
+
+      &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 45px;
+        background: rgb(172, 167, 167);
+        span{
+            font-size: 25px;
+            color: white;
+        }
+
+      }
+      &__btn2{
+        padding-left: 20px;
+      }
+    }
+  }
+}
