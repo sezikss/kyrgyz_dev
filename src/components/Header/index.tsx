@@ -15,11 +15,11 @@ const Header: React.FC = () => {
         <div className="header">
           <img src={logoHeader} alt="img" />
           <div className="header--nav">
-            <a href="">Вакансии</a>
-            <a href="">Мероприятия</a>
-            <a href="">Видео</a>
-            <a href="">Организации</a>
-            <a href="">Сообщество</a>
+            <Link to={"/вакансии"}>Вакансии</Link>
+            <Link to={"/мероприятия"}>Мероприятия</Link>
+            <Link to={"/видео"}>Видео</Link>
+            <Link to={"/организации"}>Организации</Link>
+            <Link to={"/cooбщество"}>Сообщество</Link>
           </div>
 
 
@@ -33,11 +33,11 @@ const Header: React.FC = () => {
          }} />
           <span onClick={() => setModalOpen(false)}>x</span>
          </div>
-          <a href="">Вакансии</a>
-            <a href="">Мероприятия</a>
-            <a href="">Видео</a>
-            <a href="">Организации</a>
-            <a href="">Сообщество</a>
+         <Link to={"/вакансии"}>Вакансии</Link>
+            <Link to={"/мероприятия"}>Мероприятия</Link>
+            <Link to={"/видео"}>Видео</Link>
+            <Link to={"/организации"}>Организации</Link>
+            <Link to={"/cooбщество"}>Сообщество</Link>
             
           </div>
         </div>
