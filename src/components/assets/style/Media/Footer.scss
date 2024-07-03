@@ -1,0 +1,39 @@
+#footer{
+    padding: 35px 35px;
+    background: black;
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      span{
+       img{
+        filter: invert(100%);
+       }
+      } 
+      &--center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__text{
+            p{
+                max-width: 640px;
+              //  margin-right: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: .03em;
+                color: #fff;
+            }
+        }
+        &__logo{
+            font-size: 30px;
+           display: flex;
+           gap: 15px;
+           a{
+            color: #818896;
+           }
+        }
+      }  
+    }
+}
