@@ -1,0 +1,39 @@
+@media (min-width: 1200px){
+   
+}
+
+@media (min-width: 992px){
+#organizations .bloc .image img {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+#organizations .bloc2 .image2 img {
+    margin-left: 5px;
+}
+
+}
+
+@media (min-width: 768px){
+    #organizations .bloc .image img {
+        margin-left: -10px;
+        margin-top: 12px;
+    }  
+    #organizations .bloc2 .image2 img{
+        margin-left: -10px;  
+    }
+}
+
+@media (min-width: 480px){
+    #organizations .bloc .image img {
+        margin-left: -3px;
+        margin-top: 15px;
+    }
+    #organizations .bloc2 .image2 img {
+        margin-left: -3px;
+    }
+
+}
+
+@media (min-width: 320px){
+    
+}

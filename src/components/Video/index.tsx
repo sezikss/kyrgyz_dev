@@ -1,8 +1,11 @@
 import React from 'react';
+
 import video1 from "../assets/img/Video1.webp"
 import video2 from "../assets/img/Video3.webp"
 import video3 from "../assets/img/Video2.webp"
 import video4 from "../assets/img/Video4.webp"
+
+
 
 
 const Video = () => {
@@ -126,6 +129,7 @@ const Video = () => {
                     <h2>
                         Kolesa Group
                     </h2>
+
                     </div>
                     <div className="video--img1__text1--par__kor2">
                     <h6>Когда</h6>
@@ -141,7 +145,7 @@ const Video = () => {
                </div>
                 </div>
             </div>
-        
+
         </div>
     );
 };
