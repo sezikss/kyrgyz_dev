@@ -1,9 +1,9 @@
 import React from 'react';
 
-import video1 from "../assets/img/video1.webp"
-import video2 from "../assets/img/video3.webp"
-import video3 from "../assets/img/video2.webp"
-import video4 from "../assets/img/video4.webp"
+import video1 from "../assets/img/Video1.webp"
+import video2 from "../assets/img/Video3.webp"
+import video3 from "../assets/img/Video2.webp"
+import video4 from "../assets/img/Video4.webp"
 
 
 
