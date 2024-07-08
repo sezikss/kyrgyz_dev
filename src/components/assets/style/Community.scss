@@ -1,0 +1,39 @@
+#community {
+    .community {
+        &--telegram {
+            padding: 50px 0;
+            h1 {
+                color: #b2c2e9;
+                padding-bottom: 20px;
+                font-size: 24px;
+                letter-spacing: .03em;
+                font-weight: 900;
+            }
+            &__blocks {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 10px;
+                &--block {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    height: 55px;
+                    right: 0;
+                    background: rgba(68, 171, 235, 0.98);                
+                    color: #fff;
+                    font-size: 16px;
+                    span {
+                        font-size: 22px;
+                        color: white;
+                        background-color: rgba(62, 154, 204, 0.98);
+                        height: 100%;
+                        width: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

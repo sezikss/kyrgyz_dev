@@ -1,0 +1,77 @@
+@media (max-width: 1140px) {
+    #community {
+        .community {
+            &--telegram {
+                &__blocks{
+                    &--block {
+                        height: 45px;
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    #community {
+        .community {
+            &--telegram {
+                padding: 20px 0;
+                h1 {
+                    font-size: 20px;
+                }
+                &__blocks{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #community {
+        .community {
+            &--telegram {
+                h1 {
+                    padding-bottom: 5px;
+                }
+                &__blocks{
+                    grid-template-columns: 1fr 1fr ;
+                    gap: 6px;
+                    &--block {
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #community {
+        .community {
+            &--telegram {
+                padding: 10px 0;
+                h1 {
+                    font-size: 17px;
+                }
+                &__blocks{
+                    grid-template-columns: 1fr 1fr;
+                    &--block {
+                        height: 30px;
+                        gap: 5px;
+                        p {
+                            font-size: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
