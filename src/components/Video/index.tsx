@@ -4,6 +4,7 @@ import video1 from "../assets/img/video1.webp"
 import video2 from "../assets/img/video3.webp"
 import video3 from "../assets/img/video2.webp"
 import video4 from "../assets/img/video4.webp"
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,7 +23,7 @@ const Video = () => {
                 <div className="video">
                   
                <div className="video--img1">
-               <img src={video1} alt="img" />
+          <Link to={"/detalvideo"}>     <img src={video1} alt="img" /></Link>
                <div className="video--img1__text1">
                 <h1>ChatGPT —<br />
                  революция или <br />
@@ -54,7 +55,7 @@ const Video = () => {
 
 
                <div className="video--img1">
-               <img src={video3} alt="img" />
+             <Link to={"/detalvideo"}>  <img src={video3} alt="img" /></Link>
                <div className="video--img1__text1">
                 <h1>Кибирд (Keybeard) <br />
                  #43 – Синдром <br />
@@ -85,7 +86,7 @@ const Video = () => {
 
 
                <div className="video--img1">
-               <img src={video2} alt="img" />
+           <Link to={"/detalvideo"}>    <img src={video2} alt="img" /></Link>
                <div className="video--img1__text1">
                 <h1>Развивайся или <br />
                  проиграешь: грейды <br />
@@ -116,7 +117,7 @@ const Video = () => {
 
 
                <div className="video--img1">
-               <img src={video4} alt="img" />
+             <Link to={"/detalvideo"}>  <img src={video4} alt="img" /></Link>
                <div className="video--img1__text1">
                 <h1>Глазами CTO: как <br />
                  устроены команды <br />

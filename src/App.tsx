@@ -10,6 +10,7 @@ import Video from './components/Video';
 import Organizations from './components/Organizations';
 import Community from './components/Community';
 import Home from './components/Home';
+import DetalVideo from './components/DetalVideo';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/видео' element={<Video/>}/>
           <Route path='/организации' element={<Organizations/>}/>
           <Route path='/cooбщество' element={<Community/>}/>
+          <Route path='/detalvideo' element={<DetalVideo/>}/>
         </Routes>
     <Footer/>
   
