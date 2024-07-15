@@ -11,6 +11,7 @@ import Organizations from './components/Organizations';
 import Community from './components/Community';
 import Home from './components/Home';
 import DetalVideo from './components/DetalVideo';
+import DetalOrganiz from './components/DetalOrganiz';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/организации' element={<Organizations/>}/>
           <Route path='/cooбщество' element={<Community/>}/>
           <Route path='/detalvideo' element={<DetalVideo/>}/>
+          <Route path='/detalorganiz' element={<DetalOrganiz/>}/>
         </Routes>
     <Footer/>
   

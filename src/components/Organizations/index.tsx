@@ -20,9 +20,9 @@ const  Organizations = () => {
                    <img data-v-7ad410c8="" src="https://devkg.com/images/organizations/dbbbb77228b5c8b9b905267da3208e0d.png" alt='img'/>
                    </div>                  
                 </div>
-
+     
                 <div className="bloc2">
-                <Link to={"/"}>
+                <Link to={"/detalorganiz"}>
                 <div className="text-nav2">
                     <h4>Компaния <span>MBank</span></h4>
                         <h4>Вакансии<span>158</span></h4>
@@ -48,7 +48,7 @@ const  Organizations = () => {
                    </div>                  
                 </div>
                 <div className="bloc2">
-                <Link to={"/"}>
+                <Link to={"/detalorganiz"}>
                 <div className="text-nav2">
                     <h4>Компaния <span>MBank</span></h4>
                         <h4>Вакансии<span>158</span></h4>
