@@ -23,7 +23,7 @@ const Video = () => {
                 <div className="video">
                   
                <div className="video--img1">
-          <Link to={"/detalvideo"}>     <img src={video1} alt="img" /></Link>
+          <Link to={"/detalvideo"}>    <img src={video1} alt="img" /></Link>
                <div className="video--img1__text1">
                 <h1>ChatGPT —<br />
                  революция или <br />
