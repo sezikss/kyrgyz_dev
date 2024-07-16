@@ -8,7 +8,7 @@ const  Organizations = () => {
                 
             </div>
             <div className="bloc">
-         <Link to={"/"}>
+         <Link to={"/newDetalOrg"}>
          <div className="text-nav">
                         <h4>Компaния <span>OcOO "Грин Телеком <br /> Сервис" (O!Dengi)</span></h4>
                         <h4>Вакансии<span>519</span></h4>
@@ -35,7 +35,7 @@ const  Organizations = () => {
                     </div>
                 </div>  
                 <div className="bloc">
-         <Link to={"/"}>
+         <Link to={"/newDetalOrg"}>
          <div className="text-nav">
                         <h4>Компaния <span>OcOO "Грин Телеком <br /> Сервис" (O!Dengi)</span></h4>
                         <h4>Вакансии<span>519</span></h4>
