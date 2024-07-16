@@ -166,11 +166,12 @@
   
   @media (max-width: 700px) {
     #eventsDetailTitle {
-      margin: 10px 0 0 0;
+    
       
       .eventsDetailTitle {
     
         h1 {
+            top: 0;
           font-size: 18px;
         }
         &--date1 {
@@ -189,9 +190,9 @@
         &--date{
             position: absolute;
             top: 0;
-            right: -40px;
+            left: 0;
               img{
-                  width: 200px;
+                  width: 300px;
                   padding-top: 90px;
               }
             }
@@ -216,7 +217,7 @@
             top: 0;
           left: 0;
               img{
-                  width: 200px;
+                  width: 300px;
                   padding-top: 90px;
               }
             }
@@ -237,9 +238,13 @@
             top: 0;
             left: 0px;
               img{
-                  width: 200px;
-                  padding-top: 90px;
+                  width: 300px;
+                  padding-top: 120px;
               }
+            }
+
+            &--date1{
+                padding-top: 100px;
             }
       }
     }
