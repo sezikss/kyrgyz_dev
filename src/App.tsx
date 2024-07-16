@@ -12,6 +12,7 @@ import Community from './components/Community';
 import Home from './components/Home';
 import DetalVideo from './components/DetalVideo';
 import DetalOrganiz from './components/DetalOrganiz';
+import NewDetalOrg from './components/NewDetalOrg';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Header/>
 
         <Routes>
-        <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/вакансии' element={<Vacancies/>}/>
           <Route path='/мероприятия' element={<Events/>}/>
           <Route path='/видео' element={<Video/>}/>
@@ -27,6 +28,7 @@ function App() {
           <Route path='/cooбщество' element={<Community/>}/>
           <Route path='/detalvideo' element={<DetalVideo/>}/>
           <Route path='/detalorganiz' element={<DetalOrganiz/>}/>
+          <Route path='/newDetalOrg' element={<NewDetalOrg/>}/>
         </Routes>
     <Footer/>
   
