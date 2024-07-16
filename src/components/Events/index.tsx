@@ -1,5 +1,6 @@
 import React from "react";
 import event from "../../components/assets/img/events1.webp";
+import { Link } from "react-router-dom";
 const Events = () => {
   return (
     <div id="events">
@@ -9,7 +10,7 @@ const Events = () => {
         </div>
         <div className="events">
           <div className="events--foto">
-            <img src={event} alt="img" />
+          <Link to={"/detalmerop"}>  <img src={event} alt="img" /></Link>
             <div className="events--foto__text">
               <h4>
                 25 августа 2024 <span>17:00</span>
