@@ -190,9 +190,9 @@
         &--date{
             position: absolute;
             top: 0;
-            left: 0;
+            left: 200;
               img{
-                  width: 300px;
+                  width: 250px;
                   padding-top: 90px;
               }
             }
@@ -209,7 +209,8 @@
         }
 
       &--date1{
-        padding-top: 180px;
+        padding-top: 220px;
+        width: 70%;
       }
 
         &--date{
@@ -244,7 +245,7 @@
             }
 
             &--date1{
-                padding-top: 100px;
+                padding-top: 200px;
             }
       }
     }
