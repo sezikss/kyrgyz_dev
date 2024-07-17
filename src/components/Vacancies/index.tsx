@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Vacancies = () => {
   return (
@@ -9,7 +10,8 @@ const Vacancies = () => {
             <button className="btn">Добавить вакансии</button>
           </div>
           <div className="cards">
-            <div className="blocks">
+           <Link to={"/detailvacancy"}> 
+           <div className="blocks">
               <div className="company">
                 <p>Компания</p>
                 <h3> Veles Finance</h3>
@@ -27,8 +29,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -47,8 +51,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -67,8 +73,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -91,8 +99,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -113,8 +123,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -133,8 +145,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -153,8 +167,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -173,8 +189,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>{" "}
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -193,8 +211,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -213,8 +233,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -233,8 +255,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -253,8 +277,10 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
           <div className="cards">
+          <Link to={"/detailvacancy"}>
             <div className="blocks">
               <div className="company">
                 <p>Компания</p>
@@ -273,6 +299,7 @@ const Vacancies = () => {
                 <h3>Офис/Бишкек</h3>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </div>
