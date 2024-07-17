@@ -14,6 +14,7 @@ import DetalVideo from './components/DetalVideo';
 import DetalOrganiz from './components/DetalOrganiz';
 import NewDetalOrg from './components/NewDetalOrg';
 import DetalMerop from './components/DetalMerop';
+import DetailVacancy from './components/DetailVacancy';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/detalorganiz' element={<DetalOrganiz/>}/>
           <Route path='/newDetalOrg' element={<NewDetalOrg/>}/>
           <Route path='/detalmerop' element={<DetalMerop/>}/>
+          <Route path='/detailvacancy' element={<DetailVacancy/>}/>
         </Routes>
     <Footer/>
   
