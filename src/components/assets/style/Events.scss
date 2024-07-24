@@ -13,11 +13,10 @@
     }
   }
   .events {
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
 
     &--foto {
       position: relative;
