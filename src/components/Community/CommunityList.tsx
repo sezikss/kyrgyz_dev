@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaGithubAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { ResourceData, ResourceItem } from "../Types/CommunityTypes";
+import { ResourceData, ResourceItem } from "../Types/Community";
 
 interface CommunityListProps {
     data: ResourceData[];

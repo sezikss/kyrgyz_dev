@@ -7,16 +7,15 @@ import video4 from "../assets/img/video4.webp"
 import { Link } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import VideoList from './VideoList';
-
+import { ResourceItem3 } from "../Types";
+import { CONSTANTS } from "../../constants/index";
 
 
 
 const Video = () => {
-    const meetups_url = "http://3.38.98.134/meetups"
 
     const  { data, loading } = useFetch({
-        url:meetups_url
-      })
+      url: `${CONSTANTS}/meetups`,      })
       console.log(data, 'meetups');
 
       if (loading) {

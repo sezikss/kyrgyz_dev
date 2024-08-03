@@ -1,15 +1,13 @@
 import { log } from "console"
 import { useEffect, useState } from "react"
 import { FaLess } from "react-icons/fa"
+import { CONSTANTS } from "../constants/index";
 
-const jobs_url = 'http://3.38.98.134/jobs'
-
-
-const useFetch = ({
-    url
-} = {
-    url: jobs_url,
-}) => {
+const useFetch = (
+    { url } = {
+      url: `${CONSTANTS}/jobs`,
+    }
+)=> {
     const [data, setData] = useState<any>([])
     const [loading, setLoading] = useState(false)
 
