@@ -1,11 +1,11 @@
 import { log } from "console"
 import { useEffect, useState } from "react"
 import { FaLess } from "react-icons/fa"
-import { CONSTANTS } from "../constants/index";
+import {  API_URL  } from "../constants/index";
 
 const useFetch = (
     { url } = {
-      url: `${CONSTANTS}/jobs`,
+      url: `${ API_URL }/jobs`,
     }
 )=> {
     const [data, setData] = useState<any>([])

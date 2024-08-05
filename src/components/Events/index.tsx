@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import EventsList from "./EventsList";
 import useFetch from "../../hooks/useFetch";
-import { CONSTANTS } from "../../constants/index";
+import {  API_URL  } from "../../constants/index";
 import { ResourceItem2 } from "../Types";
 
 const Events = () => {
   const { data, loading } = useFetch({
-    url: `${CONSTANTS}/events`,
+    url: `${ API_URL }/events`,
   });
 
   

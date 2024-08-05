@@ -3,18 +3,17 @@ import { Link } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import loading1 from "../../components/assets/img/loiding.svg"
 import OrganizationsList from './OrganizationList';
-import { CONSTANTS } from '../../constants/index';
+import {  API_URL  } from '../../constants/index';
 import { ResourceItem4 } from '../Types';
 
 const  Organizations = () => {
     const  { data, loading } = useFetch({
-    url: `${CONSTANTS}/organizations` 
+    url: `${ API_URL }/organizations` 
     }) 
     if (loading) {
-        return <div className='loading'style={{
-            display:'flex',alignItems:'center',justifyContent:"center"
-        }}><img src={loading1} alt="img" /></div>;
+        return <div>Loading</div>;
       }
+    
     return (
             <div id='organizations'>
             <div className="organizations">

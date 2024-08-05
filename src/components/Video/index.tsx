@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import VideoList from './VideoList';
 import { ResourceItem3 } from "../Types";
-import { CONSTANTS } from "../../constants/index";
+import {  API_URL  } from "../../constants/index";
 
 
 
 const Video = () => {
 
     const  { data, loading } = useFetch({
-      url: `${CONSTANTS}/meetups`,      })
+      url: `${ API_URL }/meetups`,      })
       console.log(data, 'meetups');
 
       if (loading) {
