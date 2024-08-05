@@ -1,16 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ResourceItem3 } from "../Types";
 
-const VideoList = ({
-  title = "",
-  organization_name = "",
-  cover = "",
-  date = "",
-}: {
-  title: string;
-  organization_name: string;
-  cover: string;
-  date: string;
+const VideoList:React.FC<ResourceItem3> = ({
+  title ,
+  organization_name ,
+  cover ,
+  date ,
 }) => {
   const date1 = new Date(date);
 
