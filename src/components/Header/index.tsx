@@ -3,7 +3,7 @@ import logoHeader from "../assets/img/Logo-header.svg";
 import logoHeader1 from "../assets/img/Logo-header.svg";
 import { RiLoginCircleLine } from "react-icons/ri";
 import { TfiMenu } from "react-icons/tfi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState<boolean>(false);
@@ -12,8 +12,7 @@ const Header: React.FC = () => {
     <div id="header">
       <div className="container">
         <div className="header">
-          <img src={logoHeader} alt="img" />
-          <div className="header--nav">
+        <Link to={"/"}> <img src={logoHeader} alt="img" /></Link>          <div className="header--nav">
             <NavLink to="/вакансии" className={({ isActive }) => isActive ? "active" : ""}>Вакансии</NavLink>
             <NavLink to="/мероприятия" className={({ isActive }) => isActive ? "active" : ""}>Мероприятия</NavLink>
             <NavLink to="/видео" className={({ isActive }) => isActive ? "active" : ""}>Видео</NavLink>

@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     &--foto {
       position: relative;
 
@@ -33,7 +32,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
         color: rgb(245, 241, 241);
         h4 {
           position: absolute;
@@ -46,20 +44,17 @@
           top: 200px;
           left: 30px;
         }
-
-        &--par {
+       &--par {
           display: flex;
           gap: 25px;
           position: absolute;
           top: 290px;
           left: 30px;
-
           &__kor1 {
             h6 {
               font-size: 16px;
             }
           }
-
           &__kor2 {
             h6 {
               font-size: 16px;
