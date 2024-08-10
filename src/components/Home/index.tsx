@@ -9,14 +9,11 @@ const Home = () => {
         <div className="container">
             <div className="home">
                 <h1>Последние мероприятия</h1>
-                <Events/>
+                <Events count={1}/>
                 <h1>Последние вакансии</h1>
-                <Vacancies />
+                <Vacancies count={4} />
                 <h1>Последние видео</h1>
                 <Video/>
-
-
-
             </div>
         </div>
         </div>
