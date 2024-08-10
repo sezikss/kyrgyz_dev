@@ -7,7 +7,6 @@
     h1 {
       display: none;
     }
-
     &--modal {
       display: none;
       position: relative;
@@ -20,7 +19,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    
       &__content {
         img {
           width: 40%;
@@ -32,11 +30,9 @@
         padding: 20px;
         width: 270px;
         height: 370px;
-    
         text-align: center;
         display: flex;
-        flex-direction: column;
-    
+        flex-direction: column;   
         a {
           display: flex;
           line-height: 2;
@@ -54,8 +50,7 @@
           }
         }
       }
-    }
-    
+    }   
     &--nav {
       display: flex;
       align-items: center;
@@ -67,14 +62,12 @@
         letter-spacing: 0.03em;
         font-weight: 700;
         transition: all 0.2s;
-
         &.active {
           font-weight: bold;
           color: rgb(18, 18, 19); 
         }
       }
     }
-
     &--login {
       width: 200px;
       height: 45px;
@@ -96,7 +89,6 @@
       overflow: hidden;
       padding: 0 15px 0 0;
       font-family: proxima-nova, sans-serif;
-
       &__btn {
         display: flex;
         justify-content: center;
@@ -115,4 +107,3 @@
     }
   }
 }
-

@@ -321,12 +321,6 @@ const Vacancies = () => {
           />
 
            })}
-
-
-
-
-
-
         </div>
       </div>
     </div>

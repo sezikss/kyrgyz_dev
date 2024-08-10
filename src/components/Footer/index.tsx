@@ -19,8 +19,6 @@ const Footer : React.FC = () => {
                        Данный проект поддерживается и администрируется членами нашего сообщества.</p>
                        <img src="//www.net.kg/img.php?id=6620&amp;refer=https%3A//devkg.com/ru/events/chto-takoe-avtomatizaciya-testirovaniya-i-s-chem-eyo-edyat-software-testers-from-kg-1097&amp;page=https%3A//devkg.com/ru&amp;c=yes&amp;java=now&amp;razresh=1920x1080&amp;cvet=24&amp;jscript=1.3&amp;rand=0.06055120196641606" alt="Net.kg counter" />
                  </div>
-                 
-
                  <div className='footer--center__logo'>
                  <a><FaTelegramPlane /></a>
                  <a><FaSquareFacebook/></a>
@@ -39,5 +37,4 @@ const Footer : React.FC = () => {
         </div>
     );
 };
-
 export default Footer;

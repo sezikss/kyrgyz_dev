@@ -27,25 +27,20 @@
     .video {
       &--img1 {
         position: relative;
-
         img {
           height: 350px;
           opacity: 0.9;
           filter: blur(3px);
         }
-
       &__text1 {
         display: flex;
         align-items: center;
         justify-content: cenetr;
         flex-direction: column;
         position: absolute;
-
         top: 60px;
         left: 25px;
         color: rgb(241, 237, 237);
-
-        
         &--par {
           display: flex;
           gap: 25px;
