@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -15,6 +14,8 @@ import DetalOrganiz from './components/DetalOrganiz';
 import NewDetalOrg from './components/NewDetalOrg';
 import DetalMerop from './components/DetalMerop';
 import DetailVacancy from './components/DetailVacancy';
+import Auth from './components/Auth';
+
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/newDetalOrg' element={<NewDetalOrg/>}/>
           <Route path='/detalmerop' element={<DetalMerop/>}/>
           <Route path='/detailvacancy' element={<DetailVacancy/>}/>
+          <Route path='/auth' element={<Auth/>}/>
         </Routes>
     <Footer/>
   
