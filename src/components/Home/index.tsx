@@ -13,7 +13,7 @@ const Home = () => {
                 <h1>Последние вакансии</h1>
                 <Vacancies count={4} />
                 <h1>Последние видео</h1>
-                <Video count={2}/>
+                <Video count={2}/>     
             </div>
         </div>
         </div>

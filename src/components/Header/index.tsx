@@ -12,7 +12,8 @@ const Header: React.FC = () => {
     <div id="header">
       <div className="container">
         <div className="header">
-        <Link to={"/"}> <img src={logoHeader} alt="img" /></Link>          <div className="header--nav">
+         <Link to={"/"}> <img src={logoHeader} alt="img" /></Link>
+          <div className="header--nav">
             <NavLink to="/вакансии" className={({ isActive }) => isActive ? "active" : ""}>Вакансии</NavLink>
             <NavLink to="/мероприятия" className={({ isActive }) => isActive ? "active" : ""}>Мероприятия</NavLink>
             <NavLink to="/видео" className={({ isActive }) => isActive ? "active" : ""}>Видео</NavLink>
