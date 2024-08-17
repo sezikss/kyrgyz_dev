@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks";
+import Cookies from "js-cookie"
+
 
 const loginApi = "http://3.38.98.134/auth/login";
 const sighUpApi = "http://3.38.98.134/auth/signup";
 
 const Auth = () => {
-  const nav = useNavigate();
-  const [userName, setUserName] = React.useState<string>("");
-  const [password, setPassword] = React.useState<string>("");
-  const [confirm, setConfirm] = React.useState<string>("");
-  const [isLoginTab, setIsLoginTab] = React.useState<boolean>(true);
+const [userName, setUserName] = useState<string>("");
+const [password, setPassword] = useState<string>("");
+const [confirm, setConfirm] = useState<string>("");
+const [isLoginTab, setIsLoginTab] = useState<boolean>(true);
 
   const apiUrl = isLoginTab ? loginApi : sighUpApi
   const {login} = useAuth({url: apiUrl})
@@ -24,13 +25,23 @@ const Auth = () => {
       alert("Password do not match");
       return;
     }
-    const res: any = await login(userName, password)
-    if(res?.success ){
-      Cookies.set('authtoken', res.token);
-      nav('/')
-    } else {
-      alert(res.message)
+
+    interface LoginResponse {
+      success: boolean;
+      token?: string;
+      message?: string;
     }
+
+
+    async function handleLogin(userName: string, password: string) {
+    const res: LoginResponse = await login(userName, password);
+      if (res.success) {
+        Cookies.set('authtoken', res.token!);
+        nav('/');
+        } else {
+       alert(res.message);
+       }
+     }
   };
 
   return (
