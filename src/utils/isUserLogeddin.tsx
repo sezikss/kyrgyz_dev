@@ -1,4 +1,4 @@
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
 
 export const isUserLogeddin = (): boolean => {
     const token = Cookies.get('authtoken')

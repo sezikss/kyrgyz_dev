@@ -1,5 +1,8 @@
+import React from "react";
 import useFetch from "../../hooks/useFetch";
 import { VacancyList } from "./VacancyList";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Vacancies = ({ count = -1 }) => {
   const {data} = useFetch()
@@ -9,7 +12,7 @@ const Vacancies = ({ count = -1 }) => {
       <div className="container">
         <div className="vacancy">
           <div className="vac">
-            <button className="btn">Добавить вакансии</button>
+          <button   onClick={() => nav("/addVacan")} className="btn">Добавить вакансии</button>
           </div>
           <div className="cards">
           </div>
