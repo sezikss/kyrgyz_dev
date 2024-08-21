@@ -15,6 +15,8 @@ import NewDetalOrg from './components/NewDetalOrg';
 import DetalMerop from './components/DetalMerop';
 import DetailVacancy from './components/DetailVacancy';
 import Auth from './components/Auth';
+import AddVac from './components/AddVac';
+
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
           <Route path='/detalmerop' element={<DetalMerop/>}/>
           <Route path='/detailvacancy' element={<DetailVacancy/>}/>
           <Route path='/auth' element={<Auth/>}/>
+          <Route path='/addVac' element={<AddVac/>}/>
         </Routes>
     <Footer/>
   
