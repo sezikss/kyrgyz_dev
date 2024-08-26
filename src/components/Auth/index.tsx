@@ -1,49 +1,46 @@
+import axios from "axios";
 import React, { useState } from "react";
+import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks";
-import Cookies from "js-cookie"
 
 
-const loginApi = "http://3.38.98.134/auth/login";
-const sighUpApi = "http://3.38.98.134/auth/signup";
+export const loginApi = "http://3.38.98.134/auth/login";
+export const signUpApi = "http://3.38.98.134/auth/signup";
 
-const Auth = () => {
-const [userName, setUserName] = useState<string>("");
-const [password, setPassword] = useState<string>("");
-const [confirm, setConfirm] = useState<string>("");
-const [isLoginTab, setIsLoginTab] = useState<boolean>(true);
+export const Auth: React.FC = () => {
+  const nav = useNavigate();
+  const [userName, setUserName] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [confirm, setConfirm] = useState<string>("");
+  const [isLoginTab, setIsLoginTab] = useState<boolean>(true);
 
-  const apiUrl = isLoginTab ? loginApi : sighUpApi
-  const {login} = useAuth({url: apiUrl})
+  const apiUrl = isLoginTab ? loginApi : signUpApi;
+  const { login } = useAuth({ url: apiUrl });
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!userName || !password) {
-      alert("Please, fill the  fields!");
+      alert("Please, fill the fields!");
       return;
     }
     if (!isLoginTab && password !== confirm) {
-      alert("Password do not match");
+      alert("Passwords do not match");
       return;
     }
-
-    interface LoginResponse {
-      success: boolean;
-      token?: string;
-      message?: string;
-    }
-
-
-    async function handleLogin(userName: string, password: string) {
-    const res: LoginResponse = await login(userName, password);
-      if (res.success) {
-        Cookies.set('authtoken', res.token!);
+    try {
+      const res: any = await login(userName, password);
+      if (res?.success && res?.token) {
+        Cookies.set('authtoken', res.token);
         nav('/');
-        } else {
-       alert(res.message);
-       }
-     }
+      } else {
+        alert(res.message);
+      }
+    } catch (error) {
+      console.error("Authentication error:", error);
+      alert("An error occurred. Please try again.");
+    }
   };
-
   return (
     <div id="auth">
       <div className="container">
@@ -71,7 +68,7 @@ const [isLoginTab, setIsLoginTab] = useState<boolean>(true);
                   onChange={(e) => setConfirm(e.target.value)}
                 />
               )}
-              <button>{isLoginTab ? "Login" : "Sign Up"}</button>
+              <button type="submit">{isLoginTab ? "Login" : "Sign Up"}</button>
 
               {isLoginTab ? (
                 <div className="auth--content__register">
@@ -83,7 +80,7 @@ const [isLoginTab, setIsLoginTab] = useState<boolean>(true);
                       setIsLoginTab(false);
                     }}
                   >
-                    SignUp
+                    Sign Up
                   </button>
                 </div>
               ) : (
