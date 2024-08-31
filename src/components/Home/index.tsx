@@ -1,7 +1,7 @@
 import React from 'react';
 import Events from '../Events';
-import Vacancies from '../Vacancies';
 import Video from '../Video';
+import Vacancies from '../Vacancies';
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
                 <h1>Последние мероприятия</h1>
                 <Events count={1}/>
                 <h1>Последние вакансии</h1>
-                <Vacancies count={4} />
+                <Vacancies count={4}/>
                 <h1>Последние видео</h1>
                 <Video count={2}/>     
             </div>
