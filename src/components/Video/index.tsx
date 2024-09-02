@@ -2,6 +2,7 @@ import useFetch from '../../hooks/useFetch';
 import VideoList from './VideoList';
 import {  API_URL  } from "../../constants/index";
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,8 +18,8 @@ const Video = ({count= -1}) => {
         <div id='video'>
             <div className="container">
           <div className="btn">
-          <Link to={'/addVideo'}> <button>Добавить видео</button></Link>          </div>
-
+          <Link to={'/addVideo'}> <button>Добавить видео</button></Link> 
+          </div>          
           <div className="text">
          <h1>Все видео</h1>
           </div>

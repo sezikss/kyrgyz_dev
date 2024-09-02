@@ -17,6 +17,8 @@ import DetailVacancy from './components/DetailVacancy';
 import Auth from './components/Auth';
 import AddVac from './components/AddVac';
 import AddVideo from './components/AddVideo';
+import RouterProtector from './components/RouterProtector';
+
 
 
 function App() {
@@ -37,8 +39,8 @@ function App() {
           <Route path='/detalmerop' element={<DetalMerop/>}/>
           <Route path='/detailvacancy' element={<DetailVacancy/>}/>
           <Route path='/auth' element={<Auth/>}/>
-          <Route path='/addVac' element={<AddVac/>}/>
-          <Route path='/addVideo' element={<AddVideo/>}/>
+          <Route path='/addVacan' element={<RouterProtector> <AddVac/></RouterProtector> }/>
+          <Route path='/addVideo' element={<RouterProtector><AddVideo/></RouterProtector> }/>
         </Routes>
     <Footer/>
   
