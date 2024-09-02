@@ -36,4 +36,4 @@ const useFetch = (
     return {data, loading}
 }
 
-export default useFetch
+export default useFetch;

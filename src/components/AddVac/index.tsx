@@ -1,6 +1,6 @@
 import React from 'react';
-import React, { useState } from 'react';
-import { API } from '../../constants/intex';
+import { useState } from 'react';
+import { API_URL} from '../../constants/index';
 import axios from 'axios';
 
 const AddVac = () => {
@@ -14,35 +14,35 @@ const AddVac = () => {
     const [email, setEmail] = useState("");
     const handleAddVacancy = async (e: React.FormEvent) => {
         e.preventDefault();
-        try {
-            const response = await axios.post(`${API}/jobs`, {
-                organization_name: nameCompany,
-                price_from: Number(priceFrom),
-                price_to: Number(priceTo),
-                currency: 'currency',
-                position: nameVacancy,
-                city: address,
-                salary: salaryVacancy,
-                phone: phone,
-                type: 'type',
-                id: Math.random(),
-                slug: '',
-                created_at: '',
-                updated_at: '',
-                is_archived: true,
-                gradient: 0,
-                workday: '',
-                organization_icon: '',
-                organization_icon_formats: [null]
-            });
-            if (response.data.success) {
-                console.log(response.data);
+            try {
+                const response = await axios.post(`${API_URL}/jobs`, {
+                    organization_name: nameCompany,
+                    price_from: Number(priceFrom),
+                    price_to: Number(priceTo),
+                    currency: 'currency',
+                    position: nameVacancy,
+                    city: address,
+                    salary: salaryVacancy,
+                    phone: phone,
+                    type: 'type',
+                    id: Math.random(),
+                    slug: '',
+                    created_at: '',
+                    updated_at: '',
+                    is_archived: true,
+                    gradient: 0,
+                    workday: '',
+                    organization_icon: '',
+                    organization_icon_formats: [null]
+                });
+                if (response.data.success) {
+                    console.log(response.data);
+                }
+                alert(response.data.message);              } catch (error: unknown) {
+                const errorMessage = (error instanceof Error) ? error.message : "Не удалось добавить вакансию";
+                alert(errorMessage);
+              }
             }
-            alert(response.data.message);
-        } catch (error) {
-            alert(error.message || "Не удалось добавить вакансию");
-        }
-    };
     return (
         <div id='addVac'>
             <div className="container">
@@ -68,5 +68,4 @@ const AddVac = () => {
         </div>
     );
 };
-
 export default AddVac;
