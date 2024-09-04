@@ -1,0 +1,198 @@
+#addEvent {
+    .addEvent {
+        h1 {
+            font-size: 24px;
+            letter-spacing: .03em;
+            color: #191f5d;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 14px;
+            letter-spacing: .03em;
+            color: #191f5d;
+            margin-bottom: 40px;
+            margin-right: 38px;
+        }
+
+        h4 {
+
+            font-size: 14px;
+            letter-spacing: .03em;
+            font-weight: 700;
+            color: #a7b0c2;
+            margin-bottom: 8px;
+        }
+        &--inpt {
+            display: flex;
+            gap: 15%;
+
+            input {
+
+                height: 250px;
+                width: 500px;
+
+                border: 1px solid #e5e5e5;
+           }
+            &__text {
+                p {
+                    flex: 1;
+                    padding-top: 25px;
+                    padding-left: 18px;
+                    font-size: 16px;
+                    letter-spacing: .03em;
+                    color: #a7b0c2;
+                }
+            }
+        }
+       h2 {
+            display: block;
+            font-size: 14px;
+            letter-spacing: .03em;
+            font-weight: 700;
+            color: #a7b0c2;
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+
+        span {
+            color: red;
+
+        }
+
+        &--inpt1 {
+            display: flex;
+            gap: 10%;
+
+
+            input {
+                height: 50px;
+                width: 510px;
+
+                border: 1px solid #e5e5e5;
+
+            }
+
+            &__text1 {
+                p {
+
+                    padding-top: 25px;
+                    padding-left: 18px;
+                    font-size: 16px;
+                    letter-spacing: .03em;
+                    color: #a7b0c2;
+                }
+            }
+        }
+       &--inpt2 {
+            display: flex;
+            gap: 10%;
+        input {
+                height: 200px;
+                width: 900px;
+                border: 1px solid #e5e5e5;
+
+            }
+
+            &__text2 {
+                p {
+                   padding-top: 25px;
+
+                    font-size: 16px;
+                    letter-spacing: .03em;
+                    color: #a7b0c2;
+                }
+            }
+        }
+        &--inpt3 {
+            margin-top: 50px;
+            h2 {
+                display: block;
+                font-size: 14px;
+                letter-spacing: .03em;
+                font-weight: 700;
+                color: #a7b0c2;
+                margin-bottom: 8px;
+                margin-top: 10px;
+            }
+            span {
+                color: red;
+            }
+            input {
+                width: 500px;
+                height: 50px;
+                background: #fff;
+                border: 1px solid #e5e5e5;
+
+            }
+        }
+        &--inpt4 {
+            h1 {
+                font-size: 14px;
+                letter-spacing: .03em;
+                font-weight: 700;
+                color: #a7b0c2;
+                margin-bottom: 8px;
+            }
+            select {
+                width: 500px;
+                height: 50px;
+                background: #fff;
+                border: 1px solid #e5e5e5;
+                color: #191f5d;
+            }
+        }
+      &--inpt5 {
+            margin-top: 50px;
+            h2 {
+                display: block;
+                font-size: 14px;
+                letter-spacing: .03em;
+                font-weight: 700;
+                color: #a7b0c2;
+                margin-bottom: 8px;
+                margin-top: 10px;
+            }
+            span {
+                color: red;
+            }
+            input {
+                width: 500px;
+                height: 50px;
+                background: #fff;
+                border: 1px solid #e5e5e5;
+
+            }
+        }
+       &--inpt6 {
+            margin-top: 50px;
+
+            h2 {
+                display: block;
+                font-size: 14px;
+                letter-spacing: .03em;
+                font-weight: 700;
+                color: #a7b0c2;
+                margin-bottom: 8px;
+                margin-top: 10px;
+            }
+            span {
+                color: red;
+            }
+            input {
+                width: 500px;
+                height: 50px;
+                background: #fff;
+                border: 1px solid #e5e5e5;
+                margin-bottom: 30px;
+
+            }
+        }
+        button{
+            padding: 20px 100px;
+            border: none;
+            color: #191f5d;
+            margin-bottom: 60px;
+        }
+    }
+}

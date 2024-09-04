@@ -17,7 +17,9 @@ import DetailVacancy from './components/DetailVacancy';
 import Auth from './components/Auth';
 import AddVac from './components/AddVac';
 import AddVideo from './components/AddVideo';
+import AddEvents from './components/AddEvent';
 import RouterProtector from './components/RouterProtector';
+import AddEvent from './components/AddEvent';
 
 
 
@@ -41,6 +43,7 @@ function App() {
           <Route path='/auth' element={<Auth/>}/>
           <Route path='/addVacan' element={<RouterProtector> <AddVac/></RouterProtector> }/>
           <Route path='/addVideo' element={<RouterProtector><AddVideo/></RouterProtector> }/>
+          <Route path='/addEvent' element={<RouterProtector><AddEvent/></RouterProtector> }/>
         </Routes>
     <Footer/>
   

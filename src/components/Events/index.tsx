@@ -2,6 +2,7 @@ import EventsList from "./EventsList";
 import useFetch from "../../hooks/useFetch";
 import {  API_URL  } from "../../constants/index";
 import { ResourceItem2 } from "../Types";
+import { Link } from "react-router-dom";
 
 const Events = (
   { count = -1 }
@@ -17,8 +18,7 @@ const Events = (
     <div id="events">
       <div className="container">
         <div className="btn1">
-          <button>Добавить мероприятиe</button>
-        </div>
+        <Link to={"/addEvents"}> <button>Добавить мероприятиe</button></Link>        </div>
         {data &&
           data.slice(0,count).map((el: ResourceItem2, index: number) => {
             return (
