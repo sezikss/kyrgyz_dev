@@ -28,7 +28,6 @@ const AddVideo = () => {
             toast.error("Пожалуйста, заполните все поля.");
             return;
         }
-
         try {
             const response = await axios.post(`${API_URL}/meetups`, {
                 id: 0,
@@ -55,7 +54,6 @@ const AddVideo = () => {
                     organVideo: "",
                     dateVideo: ""
                 });
-
                 toast.success(response.data.message);
             } else {
                 toast.error(response.data.message);
@@ -64,7 +62,6 @@ const AddVideo = () => {
             toast.error("Не удалось добавить видео");
         }
     };
-
     return (
         <div id='addVacan'>
             <div className="container">
@@ -103,4 +100,4 @@ const AddVideo = () => {
     );
 };
 
-export default AddVideo;
+export default AddVideo;    
