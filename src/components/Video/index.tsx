@@ -2,7 +2,6 @@ import useFetch from '../../hooks/useFetch';
 import VideoList from './VideoList';
 import {  API_URL  } from "../../constants/index";
 import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 
 
@@ -33,8 +32,6 @@ const Video = ({count= -1}) => {
                         organization_name={el.organization_name}
                         cover={el.cover}
                         date={el.date}
-
-
                       />
                     );
                   })}
@@ -43,5 +40,4 @@ const Video = ({count= -1}) => {
       </div>
      );
    };
-export default Video;
-                
+export default Video;               

@@ -1,11 +1,11 @@
 import React from "react";
 import useFetch from "../../hooks/useFetch";
-import { VacancyList } from "./VacancyList";
 import { useNavigate } from 'react-router-dom';
+import VacancyList from "./VacancyList";
 
 const Vacancies = ({ count = -1 }) => {
   const { data } = useFetch();
-  const navigate = useNavigate(); // Создаем функцию навигации
+  const navigate = useNavigate(); 
 
   return (
     <div id="vacancy">
@@ -37,7 +37,5 @@ const Vacancies = ({ count = -1 }) => {
     </div>
   );
 };
-  );
-};
-
+ 
 export default Vacancies;
